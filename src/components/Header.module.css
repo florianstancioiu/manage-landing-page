@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  margin-bottom: 5rem;
+}
+
+.logo,
+.hamburger {
+  cursor: pointer;
+}

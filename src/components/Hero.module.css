@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 0 2.4rem;
+  text-align: center;
+}
+
+.image-wrapper {
+  margin-bottom: 4.4rem;
+}
+
+.illustration {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text-wrapper button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10.8rem;
+}
+
+.text-wrapper h1 {
+  margin-bottom: 2.4rem;
+  line-height: 4rem;
+}
+
+.desc {
+  margin-bottom: 3.6rem;
+  font-weight: 400;
+  color: var(--clr-neutral-one);
+}

@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--clr-primary-one);
+  color: var(--clr-neutral-four);
+  font-size: 1.4rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  padding: 0 3.2rem;
+  cursor: pointer;
+}

@@ -11,10 +11,13 @@
 html {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 62.5%;
+  font-weight: 400;
 }
 
 body {
   font-size: 1.6rem;
+  color: var(--clr-primary-two);
+  background-color: var(--clr-neutral-four);
 }
 
 /* Box sizing rules */
