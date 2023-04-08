@@ -1,0 +1,36 @@
+.wrapper {
+  margin-right: -1.6rem;
+  margin-bottom: 5rem;
+}
+
+.title {
+  background-color: var(--clr-neutral-three);
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 3rem 0 0 3rem;
+  margin-bottom: 1.8rem;
+  text-align: left;
+}
+
+.id {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: var(--clr-primary-one);
+  color: var(--clr-neutral-four);
+  padding: 0 2.4rem;
+  border-radius: 3rem;
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+
+.actual-title {
+  font-weight: 500;
+}
+
+.desc {
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--clr-neutral-one);
+  padding-right: 1.6rem;
+}

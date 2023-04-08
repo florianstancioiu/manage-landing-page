@@ -27,5 +27,7 @@
 .desc {
   margin-bottom: 3.6rem;
   font-weight: 400;
+  font-size: 1.5rem;
   color: var(--clr-neutral-one);
+  padding: 0 2rem;
 }
