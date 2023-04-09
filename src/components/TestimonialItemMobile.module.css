@@ -1,0 +1,29 @@
+.testimonial {
+  background-color: var(--clr-neutral-three);
+  margin-bottom: 2.5rem;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.avatar {
+  max-width: 7.2rem;
+  max-height: 7.2rem;
+  position: relative;
+  top: -3.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author {
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+  color: var(--clr-neutral-one);
+  padding: 0 3rem 4.8rem;
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  text-align: center;
+  padding: 0 1.6rem;
+}
+
+.title {
+  margin-bottom: 10.6rem;
+}
+
+.mobile-testimonials-inner {
+  margin-bottom: 2.5rem;
+}
+
+.mobile-testimonials-wrapper button {
+  margin: 0 auto 4.2rem;
+}
+
+.mobile-testimonials-indicators {
+  margin-bottom: 4.6rem;
+  justify-content: center;
+  display: flex;
+}
+
+.mobile-indicator {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 0.2rem solid var(--clr-primary-one);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+
+.mobile-indicator.active-indicator {
+  background-color: var(--clr-primary-one);
+}
+
+.mobile-indicator:last-child {
+  margin-right: 0;
+}
