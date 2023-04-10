@@ -1,0 +1,22 @@
+.simplify {
+  background-color: var(--clr-primary-one);
+  background-image: url('/images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  background-position-y: 7rem;
+  color: var(--clr-neutral-four);
+  padding-top: 10.5rem;
+  padding-bottom: 9rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.4rem;
+  padding: 0 4rem;
+}
+
+.simplify button {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -10,3 +10,8 @@
   padding: 0 3.2rem;
   cursor: pointer;
 }
+
+.btn.alternate {
+  background-color: var(--clr-neutral-four);
+  color: var(--clr-primary-one);
+}
