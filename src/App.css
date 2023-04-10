@@ -20,6 +20,13 @@ body {
   background-color: var(--clr-neutral-four);
 }
 
+.header {
+  background-image: url('/images/bg-tablet-pattern.svg');
+  background-size: contain;
+  background-position: 7rem -2rem;
+  background-repeat: no-repeat;
+}
+
 /* Box sizing rules */
 *,
 *::before,

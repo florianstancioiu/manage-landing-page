@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <>
-      <header>
+      <header className='header'>
         <Header />
         <Hero />
       </header>
