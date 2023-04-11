@@ -6,7 +6,6 @@ const HeaderMenuMobile = ({ show }) => {
 
   return createPortal(
     <div className={classes.wrapper}>
-      <div className={classes.overlay}></div>
       <div className={classes['inner-wrapper']}>
         <a href='#' className={classes.link}>
           Pricing

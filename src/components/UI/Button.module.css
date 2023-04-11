@@ -9,6 +9,7 @@
   line-height: 4.4rem;
   padding: 0 3.2rem;
   cursor: pointer;
+  box-shadow: 0 3px 14px var(--clr-primary-one);
 }
 
 .btn.alternate {
