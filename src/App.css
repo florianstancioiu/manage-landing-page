@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  height: auto;
+  position: relative;
   font-size: 1.6rem;
   color: var(--clr-primary-two);
   background-color: var(--clr-neutral-four);

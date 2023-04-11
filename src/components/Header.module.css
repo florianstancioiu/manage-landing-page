@@ -11,4 +11,5 @@
 .logo,
 .hamburger {
   cursor: pointer;
+  z-index: 200;
 }
