@@ -34,3 +34,26 @@
   color: var(--clr-neutral-one);
   padding-right: 1.6rem;
 }
+
+@media screen and (min-width: 1111px) {
+  .wrapper {
+    margin-bottom: 4.5rem;
+  }
+
+  .id {
+    margin-right: 3rem;
+    font-weight: 700;
+  }
+
+  .title {
+    background-color: transparent;
+  }
+
+  .actual-title {
+    font-weight: 700;
+  }
+
+  .desc {
+    padding: 0 0 0 9.8rem;
+  }
+}
