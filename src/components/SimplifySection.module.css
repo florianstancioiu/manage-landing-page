@@ -1,9 +1,9 @@
 .simplify {
   background-color: var(--clr-primary-one);
+  color: var(--clr-neutral-four);
   background-image: url('/images/bg-simplify-section-mobile.svg');
   background-repeat: no-repeat;
   background-position-y: 7rem;
-  color: var(--clr-neutral-four);
   padding-top: 10.5rem;
   padding-bottom: 9rem;
 }
@@ -19,4 +19,36 @@
 .simplify button {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1111px) {
+  .simplify {
+    background-image: url('/images/bg-simplify-section-desktop.svg');
+    background-position: center;
+    padding-top: 6.8rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .inner-wrapper {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    max-width: 44rem;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .inner-wrapper button {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
