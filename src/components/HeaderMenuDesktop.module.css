@@ -1,0 +1,19 @@
+.wrapper {
+  display: none;
+}
+@media screen and (min-width: 1111px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    margin-right: 3.2rem;
+    text-decoration: none;
+    color: var(--clr-primary-two);
+  }
+
+  .link:last-child {
+    margin-right: 0;
+  }
+}

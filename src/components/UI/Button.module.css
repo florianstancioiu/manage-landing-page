@@ -4,7 +4,8 @@
   border-radius: 3rem;
   background-color: var(--clr-primary-one);
   color: var(--clr-neutral-four);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   height: 4.4rem;
   line-height: 4.4rem;
   padding: 0 3.2rem;

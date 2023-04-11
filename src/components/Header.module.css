@@ -8,8 +8,29 @@
   margin-bottom: 5rem;
 }
 
+.wrapper button {
+  display: none;
+}
+
 .logo,
 .hamburger {
   cursor: pointer;
   z-index: 200;
+}
+
+@media screen and (min-width: 1111px) {
+  .wrapper {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .wrapper button {
+    display: block;
+  }
 }

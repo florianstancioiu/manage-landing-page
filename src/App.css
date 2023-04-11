@@ -24,9 +24,17 @@ body {
 
 .header {
   background-image: url('/images/bg-tablet-pattern.svg');
-  background-size: contain;
-  background-position: 7rem -2rem;
+  background-size: 44rem;
+  background-position: right -27vw top -9vh;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1111px) {
+  .header {
+    padding-top: 5.4rem;
+    background-size: 70rem;
+    background-position: right -3vw top -9vh;
+  }
 }
 
 /* Box sizing rules */

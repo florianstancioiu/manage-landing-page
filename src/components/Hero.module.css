@@ -32,3 +32,41 @@
   color: var(--clr-neutral-one);
   padding: 0 2rem;
 }
+
+@media screen and (min-width: 1111px) {
+  .wrapper {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image-wrapper {
+    max-width: 54rem;
+  }
+
+  .text-wrapper {
+    max-width: 44rem;
+    text-align: left;
+  }
+
+  .text-wrapper h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .desc {
+    padding: 0;
+    max-width: 33rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .text-wrapper button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
