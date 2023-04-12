@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import classes from './Testimonials.module.css';
 import TestimonialItemMobile from './TestimonialItemMobile';
+import TestimonialItemDesktop from './TestimonialItemDesktop';
 import Button from './UI/Button';
 
 const Testimonials = () => {
@@ -43,6 +44,20 @@ const Testimonials = () => {
               ></div>
             );
           })}
+        </div>
+        <Button title='Get Started' />
+      </div>
+      <div className={classes['desktop-testimonials-wrapper']}>
+        <div className={classes['desktop-inner-wrapper']}>
+          {testimonials.map((item, index) => (
+            <TestimonialItemDesktop
+              key={index}
+              isActive={item.id === activeId}
+              author={item.author}
+              avatar={item.avatar}
+              desc={item.desc}
+            />
+          ))}
         </div>
         <Button title='Get Started' />
       </div>

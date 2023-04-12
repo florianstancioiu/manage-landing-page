@@ -39,3 +39,50 @@
 .mobile-indicator:last-child {
   margin-right: 0;
 }
+
+.desktop-testimonials-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 1111px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .title {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .mobile-testimonials-wrapper {
+    display: none;
+  }
+
+  .desktop-testimonials-wrapper {
+    display: block;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .desktop-testimonials-wrapper > button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18rem;
+    margin-top: 5rem;
+  }
+
+  .desktop-inner-wrapper {
+    /*display: flex;*/
+    width: 9999px;
+    margin-left: -12rem;
+  }
+
+  .desktop-inner-wrapper > div {
+    margin-right: 3rem;
+    width: 54rem;
+    float: left;
+    margin-top: 4rem;
+  }
+}

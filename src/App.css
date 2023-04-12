@@ -19,7 +19,7 @@ body {
   position: relative;
   font-size: 1.6rem;
   color: var(--clr-primary-two);
-  background-color: var(--clr-neutral-four);
+  background-color: white;
 }
 
 .header {
@@ -30,6 +30,13 @@ body {
 }
 
 @media screen and (min-width: 1111px) {
+  body {
+    background-image: url('/images/bg-tablet-pattern.svg');
+    background-size: 77rem;
+    background-position: left -51rem top 101rem;
+    background-repeat: no-repeat;
+  }
+
   .header {
     padding-top: 5.4rem;
     background-size: 70rem;
