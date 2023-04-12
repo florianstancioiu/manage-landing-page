@@ -62,23 +62,23 @@ const Footer = () => {
           </ul>
         </div>
         <div className={classes['social-icons-wrapper']}>
-          <a href='#'>
+          <a href='#' aria-label='Visit Our Facebook Page'>
             <img className={classes['social-icon']} src={FacebookIcon} alt='' />
           </a>
-          <a href='#'>
+          <a href='#' aria-label='Visit Our Youtube Page'>
             <img className={classes['social-icon']} src={YoutubeIcon} alt='' />
           </a>
-          <a href='#'>
+          <a href='#' aria-label='Visit Our Twitter Page'>
             <img className={classes['social-icon']} src={TwitterIcon} alt='' />
           </a>
-          <a href='#'>
+          <a href='#' aria-label='Visit Our Pinterest Page'>
             <img
               className={classes['social-icon']}
               src={PinterestIcon}
               alt=''
             />
           </a>
-          <a href='#'>
+          <a href='#' aria-label='Visit Our Instagram Page'>
             <img
               className={classes['social-icon']}
               src={InstagramIcon}
@@ -102,35 +102,35 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes['social-icons-wrapper']}>
-              <a href='#'>
+              <a href='#' aria-label='Visit Our Facebook Page'>
                 <img
                   className={classes['social-icon']}
                   src={FacebookIcon}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a href='#' aria-label='Visit Our Youtube Page'>
                 <img
                   className={classes['social-icon']}
                   src={YoutubeIcon}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a href='#' aria-label='Visit Our Twitter Page'>
                 <img
                   className={classes['social-icon']}
                   src={TwitterIcon}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a href='#' aria-label='Visit Our Pinterest Page'>
                 <img
                   className={classes['social-icon']}
                   src={PinterestIcon}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a href='#' aria-label='Visit Our Instagram Page'>
                 <img
                   className={classes['social-icon']}
                   src={InstagramIcon}
