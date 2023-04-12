@@ -29,6 +29,11 @@
   color: var(--clr-neutral-four);
   border: none;
   border-radius: 4rem;
+  cursor: pointer;
+}
+
+.inbox-btn:hover {
+  background-color: #fb8f73;
 }
 
 .links-wrapper {
@@ -54,6 +59,10 @@
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--clr-neutral-four);
+}
+
+.link:hover {
+  color: var(--clr-primary-one);
 }
 
 .social-icons-wrapper {

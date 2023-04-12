@@ -1,6 +1,7 @@
 .wrapper {
   display: none;
 }
+
 @media screen and (min-width: 1111px) {
   .wrapper {
     display: flex;
@@ -11,6 +12,10 @@
     margin-right: 3.2rem;
     text-decoration: none;
     color: var(--clr-primary-two);
+  }
+
+  .link:hover {
+    color: var(--clr-neutral-one);
   }
 
   .link:last-child {

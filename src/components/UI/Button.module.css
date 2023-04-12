@@ -13,7 +13,15 @@
   box-shadow: 0 3px 14px var(--clr-primary-one);
 }
 
+.btn:hover {
+  background-color: #f59275;
+}
+
 .btn.alternate {
   background-color: var(--clr-neutral-four);
   color: var(--clr-primary-one);
+}
+
+.btn.alternate:hover {
+  color: #e8b2a6;
 }
