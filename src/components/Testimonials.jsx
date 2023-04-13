@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useInView, motion, useAnimation } from 'framer-motion';
+
 import classes from './Testimonials.module.css';
 import TestimonialItemMobile from './TestimonialItemMobile';
 import TestimonialItemDesktop from './TestimonialItemDesktop';
@@ -8,15 +10,69 @@ const Testimonials = () => {
   const [activeId, setActiveId] = useState(1);
   const [testimonials, setTestimonials] = useState([]);
 
+  const titleControl = useAnimation();
+  const buttonOneControl = useAnimation();
+  const buttonTwoControl = useAnimation();
+  const titleRef = useRef(null);
+  const buttonOneRef = useRef(null);
+  const buttonTwoRef = useRef(null);
+  const titleInView = useInView(titleRef);
+  const buttonOneInView = useInView(buttonOneRef);
+  const buttonTwoInView = useInView(buttonTwoRef);
+
+  const titleVariants = {
+    visible: { scale: 1, y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: { scale: 0.5, y: 100, opacity: 0 },
+  };
+  const buttonVariants = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: { y: 100, opacity: 0 },
+  };
+
   useEffect(() => {
     fetch('testimonials.json')
       .then((response) => response.json())
       .then((data) => setTestimonials(data.data));
   }, []);
 
+  useEffect(() => {
+    if (titleInView) {
+      titleControl.start('visible');
+    } else {
+      titleControl.start('hidden');
+    }
+
+    if (buttonOneInView) {
+      buttonOneControl.start('visible');
+    } else {
+      buttonOneControl.start('hidden');
+    }
+
+    if (buttonTwoInView) {
+      buttonTwoControl.start('visible');
+    } else {
+      buttonTwoControl.start('hidden');
+    }
+  }, [
+    titleInView,
+    titleControl,
+    buttonOneInView,
+    buttonOneControl,
+    buttonTwoInView,
+    buttonTwoControl,
+  ]);
+
   return (
     <div className={classes.wrapper}>
-      <h2 className={classes.title}>What they’ve said</h2>
+      <motion.h2
+        ref={titleRef}
+        variants={titleVariants}
+        initial='hidden'
+        animate={titleControl}
+        className={classes.title}
+      >
+        What they've said
+      </motion.h2>
       <div className={classes['mobile-testimonials-wrapper']}>
         <div className={classes['mobile-testimonials-inner']}>
           {testimonials.map((item, index) => (
@@ -45,7 +101,14 @@ const Testimonials = () => {
             );
           })}
         </div>
-        <Button title='Get Started' />
+        <motion.div
+          ref={buttonOneRef}
+          variants={buttonVariants}
+          initial='hidden'
+          animate={buttonOneControl}
+        >
+          <Button title='Get Started' />
+        </motion.div>
       </div>
       <div className={classes['desktop-testimonials-wrapper']}>
         <div className={classes['desktop-inner-wrapper']}>
@@ -59,7 +122,14 @@ const Testimonials = () => {
             />
           ))}
         </div>
-        <Button title='Get Started' />
+        <motion.div
+          ref={buttonTwoRef}
+          variants={buttonVariants}
+          initial='hidden'
+          animate={buttonTwoControl}
+        >
+          <Button title='Get Started' />
+        </motion.div>
       </div>
     </div>
   );
