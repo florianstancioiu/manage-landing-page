@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useInView, motion, useAnimation } from 'framer-motion';
 
 import classes from './Header.module.css';
 import LogoImg from '../images/logo.svg';
@@ -10,9 +11,30 @@ import Button from './UI/Button';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const control = useAnimation();
+  const headerRef = useRef(null);
+  const inView = useInView(headerRef);
+  const headerVariants = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: { y: -40, opacity: 0 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start('visible');
+    } else {
+      control.start('hidden');
+    }
+  }, [control, inView]);
 
   return (
-    <div className={classes.wrapper}>
+    <motion.div
+      ref={headerRef}
+      variants={headerVariants}
+      className={classes.wrapper}
+      initial='hidden'
+      animate={control}
+    >
       <img src={LogoImg} className={classes.logo} alt='Logo Image' />
       <HeaderMenuDesktop />
       <HeaderMenuMobile show={showMenu} />
@@ -33,7 +55,7 @@ const Header = () => {
           alt=''
         />
       )}
-    </div>
+    </motion.div>
   );
 };
 
