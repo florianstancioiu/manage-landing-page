@@ -12,16 +12,16 @@ html {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 62.5%;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
   height: auto;
   position: relative;
-  width: 100vw;
-  overflow-x: hidden;
   font-size: 1.6rem;
   color: var(--clr-primary-two);
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -38,7 +38,6 @@ body {
     background-position: left -51rem top 101rem;
     background-repeat: no-repeat;
     width: auto;
-    overflow-x: auto;
   }
 
   .header {

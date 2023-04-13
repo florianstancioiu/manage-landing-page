@@ -1,6 +1,7 @@
 .wrapper {
   padding: 0 2.4rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .image-wrapper {

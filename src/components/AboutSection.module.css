@@ -1,6 +1,7 @@
 .wrapper {
   padding: 0 1.6rem;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .different-wrapper .title {
