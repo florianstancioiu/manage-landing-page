@@ -24,9 +24,13 @@ const Testimonials = () => {
     visible: { scale: 1, y: 0, opacity: 1, transition: { duration: 0.5 } },
     hidden: { scale: 0.5, y: 100, opacity: 0 },
   };
-  const buttonVariants = {
+  const buttonOneVariants = {
     visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
     hidden: { y: 100, opacity: 0 },
+  };
+  const buttonTwoVariants = {
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+    hidden: { y: 200, opacity: 0 },
   };
 
   useEffect(() => {
@@ -103,7 +107,7 @@ const Testimonials = () => {
         </div>
         <motion.div
           ref={buttonOneRef}
-          variants={buttonVariants}
+          variants={buttonOneVariants}
           initial='hidden'
           animate={buttonOneControl}
         >
@@ -124,7 +128,7 @@ const Testimonials = () => {
         </div>
         <motion.div
           ref={buttonTwoRef}
-          variants={buttonVariants}
+          variants={buttonTwoVariants}
           initial='hidden'
           animate={buttonTwoControl}
         >
