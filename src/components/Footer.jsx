@@ -14,8 +14,8 @@ const Footer = () => {
   const ref = useRef(null);
   const inView = useInView(ref);
   const variants = {
-    visible: { scale: 1, opacity: 1, transition: { duration: 0.7 } },
-    hidden: { scale: 0.2, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3 } },
+    hidden: { y: 50, opacity: 0 },
   };
 
   useEffect(() => {
