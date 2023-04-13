@@ -17,6 +17,8 @@ html {
 body {
   height: auto;
   position: relative;
+  width: 100vw;
+  overflow-x: hidden;
   font-size: 1.6rem;
   color: var(--clr-primary-two);
   background-color: white;
@@ -35,6 +37,8 @@ body {
     background-size: 77rem;
     background-position: left -51rem top 101rem;
     background-repeat: no-repeat;
+    width: auto;
+    overflow-x: auto;
   }
 
   .header {
